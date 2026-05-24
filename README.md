@@ -12,10 +12,10 @@ This tool is especially useful for sharing project context with AI assistants an
   Easy-to-use desktop GUI for selecting folders and configuring extraction rules.
 
 * **Smart Filtering**
-  Built-in toggles for common file extensions such as `.cs`, `.css`, `.html`, `.js`, `.py`, `.sql`, and `.ts`.
+  Built-in toggles for common file extensions such as `.cs`, `.css`, `.html`, `.js`, `.json`, `.py`, `.sql`, and `.ts`.
 
 * **Noise Reduction**
-  Automatically ignores heavy and irrelevant directories like `.git`, `.vs`, `node_modules`, `bin`, `obj`, and `dist`.
+  Automatically ignores heavy and irrelevant directories like `.git`, `.vs`, `.vscode`, `node_modules`, `bin`, `obj`, `build`, `dist` and `platform`,.
 
 * **Advanced Customization**
   Add custom relative paths to ignore directly through the interface.
