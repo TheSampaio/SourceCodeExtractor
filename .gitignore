@@ -1,0 +1,13 @@
+# Directories
+.vs/
+.vscode/
+
+__pycache__/
+
+bin/
+obj/
+build/
+
+# Files
+*.spec
+*.user
