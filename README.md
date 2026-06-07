@@ -1,91 +1,141 @@
 # Source Code Extractor
 
-Source Code Extractor is a clean desktop application built with Python that streamlines the process of gathering source code context from projects. It allows you to select a project directory, filter files by extension, ignore irrelevant paths (such as `bin`, `node_modules`, or `.git`), and instantly copy the formatted output to your clipboard.
+A desktop utility built with Python that extracts source code from projects and copies it into a structured, AI-friendly format.
 
-This tool is especially useful for sharing project context with AI assistants and LLMs without manually opening and copying dozens of files.
+Source Code Extractor was designed to simplify the process of sharing project context with AI assistants and LLMs. Instead of manually opening and copying dozens of files, the application scans your project, filters relevant source files, ignores unnecessary directories, and generates a clean output ready to be pasted anywhere.
 
 ![Source Code Extractor Showcase](.github/images/showcase-source-code-extractor.jpg)
 
-## Features
 
-* **Visual Interface**
-  Easy-to-use desktop GUI for selecting folders and configuring extraction rules.
+## ✨ Why Use It?
 
-* **Smart Filtering**
-  Built-in toggles for common file extensions such as `.cs`, `.css`, `.html`, `.js`, `.json`, `.py`, `.sql`, and `.ts`.
+When working with AI assistants, providing accurate project context is essential.
 
-* **Noise Reduction**
-  Automatically ignores heavy and irrelevant directories like `.git`, `.vs`, `.vscode`, `node_modules`, `bin`, `obj`, `build`, `dist` and `platform`,.
+Source Code Extractor helps you:
 
-* **Advanced Customization**
-  Add custom relative paths to ignore directly through the interface.
-
-* **One-Click Clipboard Export**
-  Formats extracted code with clear file headers:
-
-  ```text
-  // ==== path/to/file ====
-  ```
-
-  Then copies everything directly to your clipboard.
+* Quickly gather source code from an entire project
+* Exclude build artifacts and generated files
+* Focus only on relevant file types
+* Export everything in a consistent format
+* Save time when sharing code with LLMs
 
 
-## Prerequisites
+## 🚀 Features
 
-* Python 3.x
-* `pyperclip` (used for clipboard management)
+### Visual Interface
 
+A simple and intuitive desktop GUI for selecting projects and configuring extraction rules.
 
-## Installation
+### Smart File Filtering
 
-### 1. Clone the repository
+Built-in support for common development file types:
 
-```bash
-git clone https://github.com/thesampaio/SourceCodeExtractor.git
+```text
+.cs  .css  .html  .js
+.json  .py  .sql  .ts
 ```
 
-### 2. Navigate to the project directory
+### Noise Reduction
+
+Automatically ignores common directories that rarely provide useful context:
+
+```text
+.git
+.vs
+.vscode
+node_modules
+bin
+obj
+build
+dist
+platform
+```
+
+### Custom Ignore Rules
+
+Add your own relative paths directly through the interface.
+
+### One-Click Clipboard Export
+
+Extracted files are formatted using clear file headers:
+
+```text
+// ==== path/to/file ====
+```
+
+The resulting output is automatically copied to your clipboard.
+
+
+## 🛠 Installation
+
+### Clone the Repository
 
 ```bash
+git clone https://github.com/TheSampaio/SourceCodeExtractor.git
 cd SourceCodeExtractor
 ```
 
-### 3. Install dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
 
-## Usage
+## ▶️ Running the Application
 
-Run the application with:
+Launch the application with:
 
 ```bash
 python src/main.py
 ```
 
 
-## Powered by Kroma UI
+## 📦 Requirements
 
-This application's graphical interface is built using **Kroma**.
+* Python 3.x
+* pyperclip
 
-Kroma is a lightweight object-oriented GUI framework built on top of Tkinter, designed to simplify the creation of graphical user interfaces in Python. It provides an intuitive API for building windows, managing widgets, and handling events efficiently.
+Install dependencies using:
 
-### Kroma Features
+```bash
+pip install -r requirements.txt
+```
 
-* Simplified window and widget management
-* Predefined color and alignment options
+
+## 🖥 Example Workflow
+
+1. Select a project folder
+2. Choose which file extensions to include
+3. Add any custom ignore rules
+4. Click **Extract**
+5. Paste the generated output into your AI assistant, documentation, or notes
+
+
+## 🎨 Built with Kroma
+
+The user interface is powered by **Kroma**, an object-oriented GUI framework built on top of Tkinter.
+
+Kroma simplifies desktop application development by providing a cleaner and more expressive API for creating windows, widgets, layouts, and event-driven interfaces.
+
+### Kroma Highlights
+
+* Object-oriented architecture
+* Simplified widget management
+* Built-in alignment and styling helpers
 * Message box utilities
-* Screen resolution retrieval
-* Customizable widget properties
-* Event-driven architecture
+* Screen information helpers
+* Event-driven design
 
-> Kroma is built on top of Tkinter, which comes pre-installed with Python.
-> No additional installation is required.
-> It is open-source and distributed under the BSD 2-Clause License.
+Repository:
+
+https://github.com/TheSampaio/Kroma
+
+> Kroma is open source and distributed under the BSD 2-Clause License.
 
 
-## License
+## 📄 License
 
-This project is open-source and available under the MIT License. See the `LICENSE` file for more information.
+This project is licensed under the MIT License.
+
+See the `LICENSE` file for more information.
