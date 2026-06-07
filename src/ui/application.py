@@ -41,7 +41,7 @@ class Application(Window):
         self.add_widget(lbl_ext)
 
         self.ext_checkboxes = {}
-        extensions = [".cs", ".css", ".html", ".js", ".json", ".py", ".sql", ".ts"]
+        extensions = [".cs", ".css", ".html", ".js", ".jsx", ".json", ".py", ".sql", ".ts", ".tsx"]
         start_x, start_y = 40, 125
         x_offset, y_offset = 80, 25
         
