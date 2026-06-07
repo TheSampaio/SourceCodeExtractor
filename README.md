@@ -4,7 +4,7 @@ Source Code Extractor is a clean desktop application built with Python that stre
 
 This tool is especially useful for sharing project context with AI assistants and LLMs without manually opening and copying dozens of files.
 
----
+![Source Code Extractor Showcase](.github/images/showcase-source-code-extractor.jpg)
 
 ## Features
 
@@ -29,14 +29,12 @@ This tool is especially useful for sharing project context with AI assistants an
 
   Then copies everything directly to your clipboard.
 
----
 
 ## Prerequisites
 
 * Python 3.x
 * `pyperclip` (used for clipboard management)
 
----
 
 ## Installation
 
@@ -58,7 +56,6 @@ cd SourceCodeExtractor
 pip install -r requirements.txt
 ```
 
----
 
 ## Usage
 
@@ -68,7 +65,6 @@ Run the application with:
 python src/main.py
 ```
 
----
 
 ## Powered by Kroma UI
 
@@ -89,7 +85,6 @@ Kroma is a lightweight object-oriented GUI framework built on top of Tkinter, de
 > No additional installation is required.
 > It is open-source and distributed under the BSD 2-Clause License.
 
----
 
 ## License
 
